@@ -1,5 +1,6 @@
 import torch.nn as nn
 
+
 class BaseDenoiser(nn.Module):
     """
     Abstract base class for all denoisers.
@@ -9,6 +10,7 @@ class BaseDenoiser(nn.Module):
     spatial_only : bool, optional
         If True, the denoiser operates only on spatial dimensions.
     """
+
     def __init__(self, spatial_only=False):
         super(BaseDenoiser, self).__init__()
         self.spatial_only = spatial_only

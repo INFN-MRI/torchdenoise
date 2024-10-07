@@ -14,6 +14,7 @@ def cache_weights(model):
     """
     return model.state_dict()
 
+
 def load_cached_weights(model, cached_weights):
     """
     Load cached weights into a model.

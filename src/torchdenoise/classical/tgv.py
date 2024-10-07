@@ -1,5 +1,6 @@
 from ..base.base_denoiser import BaseDenoiser
 
+
 class TGVDenoiser(BaseDenoiser):
     """
     Total Generalized Variation (TGV) denoising.
@@ -9,6 +10,7 @@ class TGVDenoiser(BaseDenoiser):
     forward(x)
         Applies TGV denoising to the input tensor.
     """
+
     def forward(self, x):
         """
         Apply TGV denoising.

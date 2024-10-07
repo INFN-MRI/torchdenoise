@@ -1,5 +1,6 @@
 from ..base.base_denoiser import BaseDenoiser
 
+
 class TotalVariationDenoiser(BaseDenoiser):
     """
     Total variation denoising.
@@ -9,6 +10,7 @@ class TotalVariationDenoiser(BaseDenoiser):
     forward(x)
         Applies total variation denoising to the input tensor.
     """
+
     def forward(self, x):
         """
         Apply total variation denoising.

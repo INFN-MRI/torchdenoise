@@ -13,4 +13,6 @@ def check_batch_dimension(x):
         If input does not have a valid batch dimension.
     """
     if len(x.shape) < 3:
-        raise ValueError("Input tensor must have at least a spatial and batch dimension.")
+        raise ValueError(
+            "Input tensor must have at least a spatial and batch dimension."
+        )

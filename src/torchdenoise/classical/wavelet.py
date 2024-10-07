@@ -1,5 +1,6 @@
 from ..base.base_denoiser import BaseDenoiser
 
+
 class WaveletDenoiser(BaseDenoiser):
     """
     Wavelet-based denoising.
@@ -9,6 +10,7 @@ class WaveletDenoiser(BaseDenoiser):
     forward(x)
         Applies wavelet-based denoising to the input tensor.
     """
+
     def forward(self, x):
         """
         Apply wavelet denoising to the input tensor.

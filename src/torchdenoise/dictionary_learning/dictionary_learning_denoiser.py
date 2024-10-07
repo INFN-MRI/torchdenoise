@@ -1,5 +1,6 @@
 from ..base.base_denoiser import BaseDenoiser
 
+
 class DictionaryLearningDenoiser(BaseDenoiser):
     """
     Dictionary learning denoising (e.g., KSVD, OMP).
@@ -9,6 +10,7 @@ class DictionaryLearningDenoiser(BaseDenoiser):
     forward(x)
         Applies dictionary learning denoising.
     """
+
     def forward(self, x):
         """
         Apply dictionary learning denoising.
